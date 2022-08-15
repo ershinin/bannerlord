@@ -47,27 +47,30 @@
         prominent
         shrink-on-scroll
     >
-      <v-app-bar-nav-icon class="hidden-md-and-up"
+      <v-app-bar-nav-icon class="hidden-md-and-up" style="position: absolute; left: 12px;"
           @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-spacer></v-spacer>
-      <v-app-bar-title class="pa-0">
-        <p class="text-h3 text-uppercase text-center">
-          Bannerlord
-        </p>
-        <v-divider></v-divider>
-        <p class="text-lowercase font-weight-thin text-center" style="letter-spacing: 0.4em;">
-          Типография
-        </p>
-<!--       <v-img
-           alt="Типография Bannerlord"
-           src="../public/img/logo.png"
-           contain
-       ></v-img>-->
-      </v-app-bar-title>
+
+        <v-app-bar-title class="pa-0">
+          <p class="text-h3 text-uppercase text-center">
+            Bannerlord
+          </p>
+          <v-divider></v-divider>
+          <p class="text-lowercase font-weight-thin text-center"
+             style="font-size: 1rem; letter-spacing: 0.2rem;"
+          >
+            Рекламное производство
+          </p>
+          <!--       <v-img
+                     alt="Типография Bannerlord"
+                     src="../public/img/logo.png"
+                     contain
+                 ></v-img>-->
+        </v-app-bar-title>
+
 
       <v-spacer></v-spacer>
-
       <v-sheet
             :height="contactResize.height"
             :width="contactResize.width"
@@ -77,21 +80,23 @@
         <v-container class="pa-0">
           <v-row no-gutters justify="center" align="center">
             <span class="text-h5">945-45-40</span>
-            <v-btn class="ma-0" color="#CF6508" icon>
+            <v-btn class="ma-0" color="#CF6508" icon href="tel:+78129454540">
               <v-icon size="24px"> mdi-phone </v-icon>
             </v-btn>
-            <v-btn class="ma-0" color="#CF6508" icon>
+            <v-btn class="ma-0" color="#CF6508" icon href="https://t.me/bannerlord_spb">
               <font-awesome-icon icon="fa-brands fa-telegram" size="xl"/>
             </v-btn>
-            <v-btn class="ma-0" color="#CF6508" icon>
+            <v-btn class="ma-0" color="#CF6508" icon href="https://wa.me/79215873550">
               <v-icon size="24px"> mdi-whatsapp </v-icon>
             </v-btn>
-            <span class="text-subtitle-2 text-decoration-underline hidden-xs-only">bannerlord@list.ru</span>
+            <a href="mailto:bannerlord@list.ru" class="white--text text-subtitle-2 hidden-xs-only">
+              bannerlord@list.ru
+            </a>
           </v-row>
         </v-container>
       </v-sheet>
 
-      <template v-slot:extension class="hidden-sm-and-down">
+      <template v-slot:extension>
           <v-tabs centered class="hidden-sm-and-down" color="#CF6508">
             <v-tab to="/" >Главная</v-tab>
             <v-menu offset-y open-on-hover>
@@ -200,7 +205,7 @@ export default {
         width: 540,
         height: 48,
         } : {
-        width: 300,
+        width: 325,
         height: 48,
       }
     },

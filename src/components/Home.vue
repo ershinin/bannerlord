@@ -2,7 +2,7 @@
   <v-container>
     <v-row justify="center" >
       <v-card flat class="col-12 col-sm-9 pa-0">
-        <v-card-text class="text-h4 text-sm-h3 text-center" >Широкоформатная печать и изготовление рекламной продукции</v-card-text>
+        <v-card-text class="text-h4 text-sm-h3 text-center grey--text text--darken-3" >Широкоформатная печать и изготовление рекламной продукции</v-card-text>
         <v-divider></v-divider>
       </v-card>
     </v-row>
